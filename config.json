@@ -1,0 +1,5 @@
+{
+  "prefix": "+",
+  "catApi": "https://api.thecatapi.com/v1/images/search",
+  "dogApi": "https://dog.ceo/api/breeds/image/random"
+}

@@ -1,0 +1,23 @@
+{
+  "name": "petpet-bot",
+  "version": "1.0.0",
+  "description": "A bot that sends pictures of cats and dogs.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "cat",
+    "dog",
+    "bot",
+    "discord",
+    "js"
+  ],
+  "author": "Davi Romão",
+  "license": "(MIT)",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "discord.js": "^13.1.0",
+    "dotenv": "^10.0.0"
+  }
+}
