@@ -22,7 +22,15 @@ client.on('messageCreate', async (message) => {
       
 
       const embedCat = {title: "<:gatinho:882373149939892275> | toma um gatinho para te deixar feliz", image: {url: catImageUrl}}
-      message.channel.send({ embeds: [embedCat]});
+      
+
+      message.channel.send({ embeds: [embedCat]})
+        .catch(err => {
+          if(err.message == "Missing Permissions"){
+            console.error(err);
+            message.channel.send("Oi!!! Não consegui enviar a mensagem. :pensive: \nAcho que me faltam permissões...")
+          }
+        });
 
       break;
 
